@@ -20,34 +20,12 @@ function MakieCore.Theme(
     if font
         theme = merge(
             MakieCore.Theme(
-                font = setting.font,
-                Axis = (
-                    titlefont = setting.font,
-                    subtitlefont = setting.font,
-                    xlabelfont = setting.font,
-                    ylabelfont = setting.font,
-                    xticklabelfont = setting.font,
-                    yticklabelfont = setting.font,
-                ),
-                Axis3 = (
-                    titlefont = setting.font,
-                    xlabelfont = setting.font,
-                    ylabelfont = setting.font,
-                    zlabelfont = setting.font,
-                    xticklabelfont = setting.font,
-                    yticklabelfont = setting.font,
-                    zticklabelfont = setting.font,
-                ),
-                Legend = (
-                    titlefont = setting.font,
-                    labelfont = setting.font,
-                ),
-                Colorbar = (
-                    labelfont = setting.font,
-                    ticklabelfont = setting.font,
-                ),
-                Label = (
-                    font = setting.font,
+                font = :regular,
+                fonts = MakieCore.Attributes(
+                    regular = setting.font,
+                    bold = setting.font,
+                    italic = setting.font,
+                    bold_italic = setting.font,
                 ),
             ),
             theme,
